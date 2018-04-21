@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Log in</title>
+    <style type="text/css">
+    body {
+        background-color: steelblue;
+        font-family: Arial;
+    }
+
+    .reg_table {
+        border-spacing: 0;
+        background-color: #fff;
+        padding: 40px 40px;
+        margin: auto;
+        box-shadow: 0 15px 3px -9px blue;
+        border-radius: 4px;
+        margin-top: 4%;
+    }
+
+    .reg_table tr td {
+        padding: 5px;
+        color: #333;
+    }
+
+    .reg_table tr td span {
+        color: red;
+        float: left;
+    }
+
+    .reg_table tr td input[type="text"],
+    .reg_table tr td input[type="password"] {
+        padding: 12px 10px;
+        font-size: 15px;
+        border: 1px solid gray;
+        width: 400px;
+        outline: 0;
+    }
+
+    .reg_table tr td input[type="submit"] {
+        background-color: black;
+        color: #fff;
+        padding: 10px 30px;
+        border: 0;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .reg_table tr td input[type="button"] {
+        background-color: white;
+        color: black;
+        font-size: 22px;
+        border: 0;
+    }
+
+    #sign {
+        font-size: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #inp,    #inp1,    #usr,    #pass,    #for,    #sub {
+        display: none;
+    }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#log").hover(function() {
+            $("#usr").fadeIn(1000);
+            $("#inp").fadeIn(1000);
+            $("#pass").fadeIn(1000);
+            $("#inp1").fadeIn(1000);
+            $("#for").fadeIn(1000);
+            $("#sub").fadeIn(1000);
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <form>
+        <table class="reg_table">
+            <tr id="sign">
+                <td>
+                    <input type="button" id="log" value="Log In">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="usr">Username <span>*</span></div>
+                </td>
+                <td>
+                    <div id="inp">
+                        <input type="text" name="username" id="username" placeholder="Username">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="pass">Password <span>*</span></div>
+                </td>
+                <td>
+                    <div id="inp1">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:right;">
+                    <div id="for">
+                        <a href="forgot.html">Forgot Password</a></div>
+                </td>
+            </tr>
+            <td>
+                <div id="sub">
+                    <input type="submit" value="Log In">
+                </div>
+            </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

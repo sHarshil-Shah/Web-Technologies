@@ -1,0 +1,31 @@
+body {
+	    	padding-top: 380px; 
+	    	background: url(../imgs/about.jpg);
+		    background-size: cover;
+		    background-position: center;
+		    background-attachment: fixed; 
+
+
+
+	    }
+.navbar-inverse {
+	      color: white;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse a{
+	      color:white;
+	    }
+
+.navbar-inverse .navbar-nav>li>a {
+	      color: white;
+	    } 
+
+
+.chester{
+	background: rgba(0, 0, 0, 0.6);
+	color: white;
+}
+
+#chests{
+	margin: 20px 35px 35px 20px;
+}
