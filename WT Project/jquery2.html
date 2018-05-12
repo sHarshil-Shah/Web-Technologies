@@ -3,87 +3,134 @@
 
 <head>
     <title>Log in</title>
+    <link href="imgs/lp-icon.png" rel="icon" type="images/png">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script>
+        function f1() {
+            alert("Man at work!!");
+        }
+    </script>
     <style type="text/css">
-    body {
-        background-color: steelblue;
-        font-family: Arial;
-    }
+        body {
+            background-image: url(./imgs/a.jpg);
+            font-family: Arial;
+            background-size: cover;
+		    background-position: center;
+		    background-attachment: fixed;
+        }
 
-    .reg_table {
-        border-spacing: 0;
-        background-color: #fff;
-        padding: 40px 40px;
-        margin: auto;
-        box-shadow: 0 15px 3px -9px blue;
-        border-radius: 4px;
-        margin-top: 4%;
-    }
+        .reg_table {
+            border-spacing: 0;
+            background-color: #fff;
+            padding: 40px 40px;
+            margin: auto;
+            box-shadow: 0 15px 3px -9px blue;
+            border-radius: 4px;
+            margin-top: 4%;
+        }
 
-    .reg_table tr td {
-        padding: 5px;
-        color: #333;
-    }
+        .reg_table tr td {
+            padding: 5px;
+            color: #333;
+        }
 
-    .reg_table tr td span {
-        color: red;
-        float: left;
-    }
+        .reg_table tr td span {
+            color: red;
+            float: left;
+        }
 
-    .reg_table tr td input[type="text"],
-    .reg_table tr td input[type="password"] {
-        padding: 12px 10px;
-        font-size: 15px;
-        border: 1px solid gray;
-        width: 400px;
-        outline: 0;
-    }
+        .reg_table tr td input[type="text"],
+        .reg_table tr td input[type="password"] {
+            padding: 12px 10px;
+            font-size: 15px;
+            border: 1px solid gray;
+            width: 400px;
+            outline: 0;
+        }
 
-    .reg_table tr td input[type="submit"] {
-        background-color: black;
-        color: #fff;
-        padding: 10px 30px;
-        border: 0;
-        border-radius: 3px;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
+        .reg_table tr td input[type="submit"] {
+            background-color: black;
+            color: #fff;
+            padding: 10px 30px;
+            border: 0;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
-    .reg_table tr td input[type="button"] {
-        background-color: white;
-        color: black;
-        font-size: 22px;
-        border: 0;
-    }
+        .reg_table tr td input[type="button"] {
+            background-color: white;
+            color: black;
+            font-size: 22px;
+            border: 0;
+        }
 
-    #sign {
-        font-size: 20px;
-    }
+        #sign {
+            font-size: 20px;
+        }
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
+        a {
+            text-decoration: none;
+            color: black;
+        }
 
-    #inp,    #inp1,    #usr,    #pass,    #for,    #sub {
-        display: none;
-    }
+        #inp,
+        #inp1,
+        #usr,
+        #pass,
+        #for,
+        #sub {
+            display: none;
+        }
     </style>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $("#log").hover(function() {
-            $("#usr").fadeIn(1000);
-            $("#inp").fadeIn(1000);
-            $("#pass").fadeIn(1000);
-            $("#inp1").fadeIn(1000);
-            $("#for").fadeIn(1000);
-            $("#sub").fadeIn(1000);
+        $(document).ready(function () {
+            $("#log").hover(function () {
+                $("#usr").fadeIn(1000);
+                $("#inp").fadeIn(1000);
+                $("#pass").fadeIn(1000);
+                $("#inp1").fadeIn(1000);
+                $("#for").fadeIn(1000);
+                $("#sub").fadeIn(1000);
+            });
         });
-    });
     </script>
 </head>
 
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Songs</a>
+                    </li>
+                    <li>
+                        <a href="tribute.html">Tribute</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="jquery2.html">Login for newsletter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <form>
         <table class="reg_table">
             <tr id="sign">
@@ -93,7 +140,9 @@
             </tr>
             <tr>
                 <td>
-                    <div id="usr">Username <span>*</span></div>
+                    <div id="usr">Username
+                        <span>*</span>
+                    </div>
                 </td>
                 <td>
                     <div id="inp">
@@ -103,7 +152,9 @@
             </tr>
             <tr>
                 <td>
-                    <div id="pass">Password <span>*</span></div>
+                    <div id="pass">Password
+                        <span>*</span>
+                    </div>
                 </td>
                 <td>
                     <div id="inp1">
@@ -114,17 +165,20 @@
             <tr>
                 <td colspan="2" style="text-align:right;">
                     <div id="for">
-                        <a href="forgot.html">Forgot Password</a></div>
+                        <a href="" onclick="f1()">Forgot Password</a>
+                    </div>
                 </td>
             </tr>
             <td>
                 <div id="sub">
-                    <input type="submit" value="Log In">
+                    <input type="submit" value="Log In" onclick="f1()">
                 </div>
             </td>
             </tr>
         </table>
     </form>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>
